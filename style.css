@@ -1,21 +1,23 @@
-body {
-    background-color: rgb(168, 168, 168);
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
 }
-
-/*      Imagens    */
-#imagem1 {
-    width: 75px;
+body
+{
+    background-color: cadetblue;
 }
-
-#imagem2 {
-    width: 75px;
+.cards
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 0px;
 }
-
-#imagem3 {
-    width: 75px;
+img
+{
+    height: 120px;
+    margin-left: 30px;
 }
-
-#imagem4 {
-    width: 75px;
-}
-/* Fim das Imagens */
