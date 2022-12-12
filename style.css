@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Righteous&family=Sarala:wght@700&display=swap');
 *
 {
     margin: 0;
@@ -5,19 +6,139 @@
     box-sizing: border-box;
     text-decoration: none;
 }
-body
-{
-    background-color: cadetblue;
+.card {
+    background: rgb(49, 58, 70);
+    color: aliceblue;
 }
-.cards
+#moedas-principais
 {
     display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    justify-content: space-around;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    flex-wrap: wrap;
+    border-bottom: 0.4px solid #fff2e7;
+    gap: 10px 90px;
+    font-size: 25px;
+    font-weight: 400;
+    padding-top: none;
+}
+h1 
+{
+    font-family: 'Nunito', sans-serif;
+    width: 100%;
+    text-align: center;
+    font-weight: 700;
+    font-size: 19px;
+    height: 20px;
+}
+.moeda-dolar
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+    gap: 10px;  
+     
+}
+.moeda-euro
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    max-width: 25%;
+    padding: 30px;
+    gap: 10px;  
+ 
+}
+.moeda-gbp
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+    gap: 10px;
+
+}
+.moeda-ars
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+    gap: 10px;
+
+}
+.moeda-cad
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+    gap: 10px;
+
+}
+.moeda-aud
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+    gap: 10px;
+
+}
+.moeda-jpy
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+    gap: 10px;
+
+}
+.moeda-cny
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+    gap: 10px;
+}
+.moeda-bitcoin
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+    gap: 10px;;
+}
+.nome
+{
+    font-size: 19px;
+    
+}
+#cripto
+{
+    display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    gap: 0px;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    /* margin-top: 40px; */
+    flex-wrap: wrap;
+    border-bottom: 0.4px solid #fff2e7;
+    gap: 10px 90px;
+    font-size: 25px;
+    font-weight: 400;
 }
-img
+.corretora-btc
 {
-    height: 120px;
-    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+    gap: 10px;
 }
