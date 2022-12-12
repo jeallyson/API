@@ -18,7 +18,7 @@ async function cotacao()
     document.getElementById("jpy").innerHTML = json.results.currencies.JPY.buy;
 
     document.getElementById("cny").innerHTML = json.results.currencies.CNY.buy;
-    
+
     document.getElementById("fox-bit").innerHTML = json.results.bitcoin.foxbit.last;
 
     document.getElementById("mercado-bitcoin").innerHTML = json.results.bitcoin.mercadobitcoin.last;
@@ -27,8 +27,10 @@ async function cotacao()
 
     document.getElementById("bitstamp").innerHTML = json.results.bitcoin.bitstamp.last;
 
+    document.getElementById("variacao-ibovespa").innerHTML = json.results.stocks.IBOVESPA.variation;
+
+    document.getElementById("variacao-ifix").innerHTML = json.results.stocks.IFIX.variation;
+
 }
-
-
 
 cotacao();

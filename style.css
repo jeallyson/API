@@ -10,17 +10,29 @@
     background: rgb(49, 58, 70);
     color: aliceblue;
 }
+.grupo
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%; /*Determina uma largura pra a div grupo*/
+}
+
+.grupo div {
+    width: 300px;
+}
+
 #moedas-principais
 {
     display: flex;
     flex-direction: row;
     /* align-items: center; */
-    justify-content: space-around;
+    /* justify-content: space-around; */
     font-family: 'Nunito', sans-serif;
     text-align: center;
     flex-wrap: wrap;
     border-bottom: 0.4px solid #fff2e7;
-    gap: 10px 90px;
+    /* gap: 10px 90px; */
     font-size: 25px;
     font-weight: 400;
     padding-top: none;
@@ -141,4 +153,67 @@ h1
     text-align: center;
     padding: 30px;
     gap: 10px;
+}
+#cripto 
+{
+    border-bottom: 0.4px solid #fff2e7;
+}
+#bolsa
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    flex-wrap: wrap;
+    border-bottom: 0.4px solid #fff2e7;
+    gap: 10px 90px;
+    font-size: 25px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.valorizacao
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+    gap: 10px;
+}
+#ibovespa
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+    gap: 10px;
+    font-size: 15px;
+}
+#ifix
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+    gap: 10px;
+    font-size: 15px;
+}
+#nasdaq
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+    gap: 10px;
+    font-size: 15px;
+}
+#dowjones
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+    gap: 10px;
+    font-size: 15px;
 }
