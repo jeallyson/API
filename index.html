@@ -5,122 +5,130 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Titulo</title>
+    <title>Corretora finanças JJL</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <header class = "cabecalho">
+        <h1>Corretora finanças JJL</h1>
+        <input type="text" placeholder="Digite uma moeda..." id = "input-moeda">
+        <input type="submit" value="Procurar" id = "bt-procurar">
+    </header>
     <main>
-        <div class="card">
-            <div class="titulo1">
-                <h1>Cotação das principais moedas para o Real</h1>
+        <div class = "container">
+
+            <div class="card">
+                <div class="titulo1">
+                    <h1>Cotação das principais moedas para o Real</h1>
+                </div>
+                <section id="moedas-principais">
+                    <div class="grupo">
+                        <div class="moeda-dolar">
+                            <p><span id="variacao"></span></p>
+                            <p>R$ <span id="usd"></span></p>
+                            <p class="nome">Usd dólar / Brl Real</p>
+                        </div>
+
+                        <div class="moeda-euro">
+                            <p><span id="variacao"></span></p>
+                            <p>R$ <span id="eur"></span></p>
+                            <p class="nome">Eur Euro / Brl Real</p>
+                        </div>
+
+                        <div class="moeda-gbp">
+                            <p><span id="variacao"></span></p>
+                            <p>R$ <span id="gbp"></span></p>
+                            <p class="nome">Gbp Libra / Brl Real</p>
+                        </div>
+
+                        <div class="moeda-ars">
+                            <p><span id="variacao"></span></p>
+                            <p>R$ <span id="ars"></span></p>
+                            <p class="nome">Ars Peso / Brl Real</p>
+                        </div>
+                    </div>
+                    <div class="grupo">
+                        <div class="moeda-cad">
+                            <p><span id="variacao"></span></p>
+                            <p>R$ <span id="cad"></span></p>
+                            <p class="nome">Cad Canadense / Brl Real</p>
+                        </div>
+
+                        <div class="moeda-aud">
+                            <p><span id="variacao"></span></p>
+                            <p>R$ <span id="aud"></span></p>
+                            <p class="nome">Aud Australianos / Brl Real</p>
+                        </div>
+
+                        <div class="moeda-jpy">
+                            <p><span id="variacao"></span></p>
+                            <p>R$ <span id="jpy"></span></p>
+                            <p class="nome">Jpy Iene / Brl Real</p>
+                        </div>
+
+                        <div class="moeda-cny">
+                            <p><span id="variacao"></span></p>
+                            <p>R$ <span id="cny"></span></p>
+                            <p class="nome">Cny Renminbi / Brl Real</p>
+                        </div>
+                    </div>
+                </section>
+
+                <h1>Cotação do BitCoin nas principais corretoras</h1>
+                <section id="cripto">
+                    <div class="corretora-btc">
+                        <p><span id="variacao"></span></p>
+                        <p>R$ <span id="fox-bit"></span></p>
+                        <p class="nome">Fox Bit / BRL real</p>
+                    </div>
+
+                    <div class="corretora-btc">
+                        <p><span id="variacao"></span></p>
+                        <p>R$ <span id="mercado-bitcoin"></span></p>
+                        <p class="nome">Mercado Bitcoin / BRL Real</p>
+                    </div>
+
+                    <div class="corretora-btc">
+                        <p><span id="variacao"></span></p>
+                        <p>R$ <span id="coinbase"></span></p>
+                        <p class="nome">CoinBase / USD dólar</p>
+                    </div>
+
+                    <div id="corretora-btc">
+                        <p><span id="variacao"></span></p>
+                        <p>R$ <span id="bitstamp"></span></p>
+                        <p class="nome">BitStamp</p>
+                    </div>
+                </section>
+
+                <h1>ÍNDICES DE BOLSAS DE VALORES PELO</h1>
+                <section id="bolsa">
+                    <div id="ibovespa">
+                        <p><span id="variacao-ibovespa"></span> %</p>
+                        <p>ibovespa</p>
+                        <p>São Paulo, Brasil</p>
+                    </div>
+
+                    <div id="ifix">
+                        <p><span id="variacao-ifix"></span> %</p>
+                        <p>Ifix</p>
+                        <p>São Paulo, Brasil</p>
+                    </div>
+
+                    <div id="nasdaq">
+                        <p><span id="variacao-nasdaq"></span> %</p>
+                        <p>Nasdaq</p>
+                        <p>New York, Eua</p>
+                    </div>
+
+                    <div id="dowjones">
+                        <p><span id="variacao-dowjones"></span> %</p>
+                        <p>Dow jones</p>
+                        <p>New York, Eua</p>
+                    </div>
+                </section>
             </div>
-            <section id="moedas-principais">
-                <div class="grupo">
-                    <div class="moeda-dolar">
-                        <p><span id="variacao"></span></p>
-                        <p>R$ <span id="usd"></span></p>
-                        <p class="nome">Usd dólar / Brl Real</p>
-                    </div>
-
-                    <div class="moeda-euro">
-                        <p><span id="variacao"></span></p>
-                        <p>R$ <span id="eur"></span></p>
-                        <p class="nome">Eur Euro / Brl Real</p>
-                    </div>
-
-                    <div class="moeda-gbp">
-                        <p><span id="variacao"></span></p>
-                        <p>R$ <span id="gbp"></span></p>
-                        <p class="nome">Gbp Libra / Brl Real</p>
-                    </div>
-
-                    <div class="moeda-ars">
-                        <p><span id="variacao"></span></p>
-                        <p>R$ <span id="ars"></span></p>
-                        <p class="nome">Ars Peso / Brl Real</p>
-                    </div>
-                </div>
-                <div class="grupo">
-                    <div class="moeda-cad">
-                        <p><span id="variacao"></span></p>
-                        <p>R$ <span id="cad"></span></p>
-                        <p class="nome">Cad Canadense / Brl Real</p>
-                    </div>
-
-                    <div class="moeda-aud">
-                        <p><span id="variacao"></span></p>
-                        <p>R$ <span id="aud"></span></p>
-                        <p class="nome">Aud Australianos / Brl Real</p>
-                    </div>
-
-                    <div class="moeda-jpy">
-                        <p><span id="variacao"></span></p>
-                        <p>R$ <span id="jpy"></span></p>
-                        <p class="nome">Jpy Iene / Brl Real</p>
-                    </div>
-
-                    <div class="moeda-cny">
-                        <p><span id="variacao"></span></p>
-                        <p>R$ <span id="cny"></span></p>
-                        <p class="nome">Cny Renminbi / Brl Real</p>
-                    </div>
-                </div>
-            </section>
-
-            <h1>Cotação do BitCoin nas principais corretoras</h1>
-            <section id="cripto">
-                <div class="corretora-btc">
-                    <p><span id="variacao"></span></p>
-                    <p>R$ <span id="fox-bit"></span></p>
-                    <p class="nome">Fox Bit / BRL real</p>
-                </div>
-
-                <div class="corretora-btc">
-                    <p><span id="variacao"></span></p>
-                    <p>R$ <span id="mercado-bitcoin"></span></p>
-                    <p class="nome">Mercado Bitcoin / BRL Real</p>
-                </div>
-
-                <div class="corretora-btc">
-                    <p><span id="variacao"></span></p>
-                    <p>R$ <span id="coinbase"></span></p>
-                    <p class="nome">CoinBase / USD dólar</p>
-                </div>
-
-                <div id="corretora-btc">
-                    <p><span id="variacao"></span></p>
-                    <p>R$ <span id="bitstamp"></span></p>
-                    <p class="nome">BitStamp</p>
-                </div>
-            </section>
-
-            <h1>ÍNDICES DE BOLSAS DE VALORES PELO</h1>
-            <section id="bolsa">
-                <div id="ibovespa">
-                    <p><span id="variacao-ibovespa"></span> %</p>
-                    <p>ibovespa</p>
-                    <p>São Paulo, Brasil</p>
-                </div>
-
-                <div id="ifix">
-                    <p><span id="variacao-ifix"></span> %</p>
-                    <p>Ifix</p>
-                    <p>São Paulo, Brasil</p>
-                </div>
-
-                <div id="nasdaq">
-                    <p><span id="variacao-nasdaq"></span> %</p>
-                    <p>Nasdaq</p>
-                    <p>New York, Eua</p>
-                </div>
-
-                <div id="dowjones">
-                    <p><span id="variacao-dowjones"></span> %</p>
-                    <p>Dow jones</p>
-                    <p>New York, Eua</p>
-                </div>
-            </section>
         </div>
     </main>
     <script src="./main.js"></script>
