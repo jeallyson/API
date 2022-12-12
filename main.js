@@ -18,12 +18,14 @@ async function cotacao()
     document.getElementById("jpy").innerHTML = json.results.currencies.JPY.buy;
 
     document.getElementById("cny").innerHTML = json.results.currencies.CNY.buy;
+    
+    document.getElementById("fox-bit").innerHTML = json.results.bitcoin.foxbit.last;
 
-    document.getElementById("btc").innerHTML = json.results.currencies.BTC.buy;
+    document.getElementById("mercado-bitcoin").innerHTML = json.results.bitcoin.mercadobitcoin.last;
 
-    document.getElementById("coinbase").innerHTML = json.results.bitcoin.coinbase.last
+    document.getElementById("coinbase").innerHTML = json.results.bitcoin.coinbase.last;
 
-    document.getElementById("fox-bit").innerHTML = json.results.bitcoin.FoxBit.last
+    document.getElementById("bitstamp").innerHTML = json.results.bitcoin.bitstamp.last;
 
 }
 
