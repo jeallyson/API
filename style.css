@@ -218,3 +218,8 @@ h1
     gap: 10px;
     font-size: 15px;
 }
+pre
+{
+    font-size: 18px;
+    font-weight: bold;
+}

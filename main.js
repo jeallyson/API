@@ -1,11 +1,15 @@
-async function cotacao()
-{
-    const respostaCotacao = await fetch ('https://api.hgbrasil.com/finance?key=b33d63c0&format=json-cors')
+let inputMoeda = document.getElementById("input-moeda");
+let moedaCompra = document.getElementById("saida");
+
+// let saida = document.getElementById("saida");
+
+async function cotacao() {
+    const respostaCotacao = await fetch('https://api.hgbrasil.com/finance?key=b33d63c0&format=json-cors')
     const json = await respostaCotacao.json()
 
     document.getElementById("usd").innerHTML = json.results.currencies.USD.buy.toLocaleString("pt-BR");
 
-    document.getElementById("eur").innerHTML = json.results.currencies.EUR.buy.toLocaleString("pt-BR"); 
+    document.getElementById("eur").innerHTML = json.results.currencies.EUR.buy.toLocaleString("pt-BR");
 
     document.getElementById("gbp").innerHTML = json.results.currencies.GBP.buy.toLocaleString("pt-BR");
 
@@ -35,8 +39,60 @@ async function cotacao()
 
     document.getElementById("variacao-dowjones").innerHTML = json.results.stocks.DOWJONES.variation.toLocaleString("pt-BR");
 
-
-
 }
-
 cotacao();
+
+async function basico() {
+    const respostaCotacao = await fetch('https://api.hgbrasil.com/finance?key=b33d63c0&format=json-cors')
+    const json = await respostaCotacao.json();
+    let moeda = inputMoeda.value;
+
+
+    switch (moeda) 
+    {
+        case 'dólar americano':
+            moedaCompra.innerHTML = `${moeda} 
+${json.results.currencies.USD.buy.toLocaleString("pt-BR")}`;
+            break;
+
+        case 'euro':
+            moedaCompra.innerHTML = `${moeda} 
+${json.results.currencies.EUR.buy.toLocaleString("pt-BR")}`;
+            break;
+
+        case 'libra':
+            moedaCompra.innerHTML = `${moeda} 
+${json.results.currencies.GBP.buy.toLocaleString("pt-BR")}`;
+            break;
+
+        case 'peso':
+            moedaCompra.innerHTML = `${moeda} 
+${json.results.currencies.ARS.buy.toLocaleString("pt-BR")}`;
+            break;
+
+        case 'dólar canadense':
+            moedaCompra.innerHTML = `${moeda} 
+${json.results.currencies.CAD.buy.toLocaleString("pt-BR")}`;
+
+            break;
+
+        case 'dólar australiano':
+            moedaCompra.innerHTML = `${moeda} 
+${json.results.currencies.AUD.buy.toLocaleString("pt-BR")}`;
+            break;
+
+            case 'iene':
+                moedaCompra.innerHTML = `${moeda} 
+${json.results.currencies.JPY.buy.toLocaleString("pt-BR")}`;
+                break;
+
+                case 'renminbi':
+                  moedaCompra.innerHTML = `${moeda} 
+${json.results.currencies.CNY.buy.toLocaleString("pt-BR")}`;
+                    break;
+
+        default:
+            alert("Moeda não encontrada...")
+
+    }
+}
