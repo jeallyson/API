@@ -6,10 +6,42 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+.cabecalho
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.barra-superior
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    border: solid #fff2e7 1px;
+}
+.inputs
+{
+    display: flex;
+    border: solid red 1px;
+    gap: 30px
+}
+.input-moeda
+{
+
+    display: flex;
+    align-items: center;
+    width: 400px;
+}
 .card {
+    /* display: flex; */
     background: rgb(49, 58, 70);
     color: aliceblue;
     margin-top: 250px;
+    margin-left: 25px;
+    margin-right: 25px; 
+    margin-bottom: 2%;
+    border-radius: 20px;
 }
 
 body {
@@ -43,14 +75,15 @@ body {
     font-weight: 400;
     padding-top: none;
 }
-h1 
+.titulo
 {
     font-family: 'Nunito', sans-serif;
     width: 100%;
     text-align: center;
     font-weight: 700;
-    font-size: 19px;
+    font-size: 15px;
     height: 20px;
+    padding-top: 30px;
 }
 .moeda-dolar
 {
@@ -174,6 +207,7 @@ h1
     text-align: center;
     flex-wrap: wrap;
     border-bottom: 0.4px solid #fff2e7;
+    border-radius: 20px;
     gap: 10px 90px;
     font-size: 25px;
     font-weight: 400;
