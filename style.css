@@ -13,7 +13,7 @@
 }
 
 body {
-    background-color: #20BF55;
+    background: linear-gradient(to right, rgb(52, 232, 158), rgb(15, 52, 67));
 }
 
 .grupo
