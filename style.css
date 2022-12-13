@@ -9,8 +9,13 @@
 .card {
     background: rgb(49, 58, 70);
     color: aliceblue;
-    margin-top: 400px;
+    margin-top: 250px;
 }
+
+body {
+    background-color: #20BF55;
+}
+
 .grupo
 {
     display: flex;

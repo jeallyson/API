@@ -52,42 +52,50 @@ async function basico() {
     {
         case 'dólar americano':
             moedaCompra.innerHTML = `${moeda} 
+            ${json.results.currencies.USD.variation.toLocaleString("pt-BR")};
 ${json.results.currencies.USD.buy.toLocaleString("pt-BR")}`;
             break;
 
         case 'euro':
             moedaCompra.innerHTML = `${moeda} 
+            ${json.results.currencies.EUR.variation.toLocaleString("pt-BR")};
 ${json.results.currencies.EUR.buy.toLocaleString("pt-BR")}`;
             break;
 
         case 'libra':
             moedaCompra.innerHTML = `${moeda} 
+            ${json.results.currencies.GBP.variation.toLocaleString("pt-BR")};
 ${json.results.currencies.GBP.buy.toLocaleString("pt-BR")}`;
             break;
 
         case 'peso':
             moedaCompra.innerHTML = `${moeda} 
+            ${json.results.currencies.ARS.variation.toLocaleString("pt-BR")};
 ${json.results.currencies.ARS.buy.toLocaleString("pt-BR")}`;
             break;
 
         case 'dólar canadense':
             moedaCompra.innerHTML = `${moeda} 
+            ${json.results.currencies.CAD.variation.toLocaleString("pt-BR")};
 ${json.results.currencies.CAD.buy.toLocaleString("pt-BR")}`;
 
             break;
 
         case 'dólar australiano':
             moedaCompra.innerHTML = `${moeda} 
+            ${json.results.currencies.AUD.variation.toLocaleString("pt-BR")};
 ${json.results.currencies.AUD.buy.toLocaleString("pt-BR")}`;
             break;
 
             case 'iene':
                 moedaCompra.innerHTML = `${moeda} 
+                ${json.results.currencies.JPY.variation.toLocaleString("pt-BR")};
 ${json.results.currencies.JPY.buy.toLocaleString("pt-BR")}`;
                 break;
 
                 case 'renminbi':
                   moedaCompra.innerHTML = `${moeda} 
+                  ${json.results.currencies.CNY.variation.toLocaleString("pt-BR")};
 ${json.results.currencies.CNY.buy.toLocaleString("pt-BR")}`;
                     break;
 
