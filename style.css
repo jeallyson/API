@@ -12,6 +12,12 @@
     flex-direction: column;
     gap: 10px;
 }
+
+.p1 {
+    margin-top: 10px;
+    line-height: 35.9px;
+}
+
 .barra-superior
 {
     display: flex;
