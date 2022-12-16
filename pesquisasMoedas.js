@@ -14,7 +14,7 @@ async function pesquisa() {
     ]
 
     // f.push(dollar, euro, pound, argentine, canadian, australian, japanese)
-    console.log(f)
+    // console.log(f)
 }
 
 pesquisa()
